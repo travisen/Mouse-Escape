@@ -4,15 +4,15 @@ function love.load()
   Object = require "libs/classic"
   require "game/game"
 
-  
+  game = Game()
+
 end
  
 -- Update game objects
 function love.update(dt)
-
+  game:update(dt)
 end
  
--- Draw a coloured rectangle.
 function love.draw()
-
+  game:draw()
 end
