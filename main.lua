@@ -5,7 +5,8 @@ function love.load()
   require "game/game"
 
   game = Game()
-
+  --img = "assets/mouse1female.png"
+  --image = love.graphics.newImage(img)
 end
  
 -- Update game objects
@@ -15,4 +16,5 @@ end
  
 function love.draw()
   game:draw()
+  --love.graphics.draw(image)
 end

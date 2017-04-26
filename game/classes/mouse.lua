@@ -8,6 +8,10 @@ function Mouse:new(x, y, width, height)
   self.height = height
   self.speed = 600
   
+  --self.img = "assets/mouse1.png"
+  --self.image = love.graphics.newImage(img)
+  self.img = "assets/graphics/mouse1female.png"
+  self.image = love.graphics.newImage(self.img)
   if DEBUGGING == true then
     print("Mouse Object created")
   end
@@ -36,6 +40,7 @@ end
 
 function Mouse:draw()
   --print(self.xPos, self.yPos, self.width, self.length)
-  love.graphics.rectangle("fill", self.x, self.y, self.width, self.height)
+  --love.graphics.rectangle("fill", self.x, self.y, self.width, self.height)
+  love.graphics.draw(self.image, self.x, self.y)
   --love.graphics.rectangle("fill", 10, 10, 64, 64)
 end
