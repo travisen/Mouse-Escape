@@ -15,6 +15,7 @@ function love.update(dt)
 end
  
 function love.draw()
+  love.graphics.setBackgroundColor(230,230,230)
   game:draw()
   --love.graphics.draw(image)
 end

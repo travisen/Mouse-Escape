@@ -6,7 +6,7 @@ function Mouse:new(x, y, width, height)
   self.y = y
   self.width = width
   self.height = height
-  self.speed = 600
+  self.speed = 400
   
   --self.img = "assets/mouse1.png"
   --self.image = love.graphics.newImage(img)
